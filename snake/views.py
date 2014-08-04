@@ -1,6 +1,7 @@
 import json
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import UserCreationForm
+from django.db.models import Max
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
 
@@ -56,5 +57,30 @@ def save_score(request):
 
         return HttpResponse(json.dumps(score_info), content_type='application/json')
 
+@csrf_exempt
+def get_score(request):
+    scores = Score.objects.filter(player=request.user)
+    highscore = scores.aggregate(Max('score'))
+
+
+    data = {'highscore': highscore}
+
+    return HttpResponse(json.dumps(data), content_type='application/json')
+
+@csrf_exempt
+def leaderboard(request):
+    if request.method == "GET":
+        scores = Score.objects.order_by('-score')
+        data = {'scores': scores}
+
+    return render(request, 'leaderboard.html', data)
+
+
+# @csrf_exempt
+# def get_leaders(request):
+#     scores = Score.objects.order_by('-score')
+#     data = {'scores': scores}
+#
+#     return render(request, 'leaderboard.html')
 
 

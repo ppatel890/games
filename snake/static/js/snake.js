@@ -244,4 +244,23 @@ $(document).ready(function () {
     $('.startPlay').on('click', startGame);
 //    startGame()
 
+    $.ajax({
+        url: '/get_score/',
+        type: 'GET',
+        dataType: 'json',
+        success: function(response){
+            console.log(response);
+            if(response.highscore.score__max === null){
+                $('.highScore').html("<h3>Your high score: 0");
+            }
+            else{
+                $('.highScore').html("<h3>Your high score: " + response.highscore.score__max);
+            }
+
+        },
+        error: function(response){
+            console.log(response)
+        }
+    })
+
 });

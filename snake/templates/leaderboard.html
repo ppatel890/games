@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block header %}
+    <script src="{% static "js/snake_leader.js" %}" type="text/javascript"></script>
+{% endblock %}
+
+{% block content %}
+    <ol>
+    {% for score in scores %}
+    <li>
+        <p>Player: {{ score.player.username }} </p>
+        <p>Game: {{ score.game }}</p>
+        <p>Score: {{ score.score }} </p>
+    </li>
+    {% endfor %}
+    </ol>
+{% endblock %}
