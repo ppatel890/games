@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="{% static "js/snake.js" %}" type="text/javascript"></script>
+</head>
+<body>
+    <button class="startPlay">Click to Play</button>
+    <button class="slow">Slow</button>
+    <button class="medium">Medium</button>
+    <button class="fast">Fast</button>
+    <div class="score">
+
+    </div>
+    <center>
+        <canvas id="canvas" width="400" height="400"></canvas>
+    </center>
+
+
+
+</body>
+</html>
