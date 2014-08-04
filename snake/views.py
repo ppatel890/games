@@ -1,7 +1,7 @@
 import json
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import UserCreationForm
-from django.db.models import Max
+from django.db.models import Max, Avg
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
 
@@ -33,7 +33,11 @@ def home(request):
 
 @login_required
 def profile(request):
-    return render(request, 'profile.html')
+    scores = Score.objects.filter(player=request.user).order_by('-datetime')
+    avg_score = Score.objects.filter(player=request.user).aggregate(Avg('score'))
+
+    data = {'scores': scores, 'avg_score': avg_score}
+    return render(request, 'profile.html', data)
 
 @csrf_exempt
 def save_score(request):

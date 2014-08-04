@@ -3,5 +3,20 @@
 {% block content %}
     <h3>Username: {{ user.username }}</h3>
     <h3>Email: {{ user.email }}</h3>
+
+    <div>
+        <p>Your average score for snake: {{ avg_score.score__avg }}</p>
+    </div>
+
+
+    <ol>
+    {% for score in scores %}
+        <li>
+        <p>Game: {{ score.game }}</p>
+        <p>Score: {{ score.score }}</p>
+        <p>Date: {{ score.datetime }}</p>
+        </li>
+    {% endfor %}
+    </ol>
 {% endblock %}
 
