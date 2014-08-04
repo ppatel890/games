@@ -17,6 +17,7 @@ urlpatterns = patterns('',
     url(r'^login/$', 'django.contrib.auth.views.login', name='login'),
     url(r'^profile/$', 'snake.views.profile', name='profile'),
     url(r'^logout/$', 'django.contrib.auth.views.logout', name='logout'),
+    url(r'^save_score', 'snake.views.save_score', name='save_score')
 
 
 )

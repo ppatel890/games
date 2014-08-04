@@ -222,11 +222,23 @@ $(document).ready(function () {
         clearInterval(gameLoopInterval);
         canvasContext.fillText("Game Over", 150, 200);
         $('.startPlay').text("Play Again");
-//        if (score>highScore){
-//            highScore = score;
-//        }
-//
-//        $('.score').html("<p>Your High Score: "+highScore+"</p>")
+        var gameInfo = {
+            'game': 'Snake',
+            'score': score
+        };
+        gameInfo = JSON.stringify(gameInfo);
+        $.ajax({
+            url: '/save_score/',
+            type: 'POST',
+            dataType: 'json',
+            data: gameInfo,
+            success: function(response){
+                console.log(response)
+            },
+            error: function(response){
+                console.log(response)
+            }
+        })
     }
 
     $('.startPlay').on('click', startGame);
