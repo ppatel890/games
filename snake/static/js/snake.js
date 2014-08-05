@@ -218,6 +218,17 @@ $(document).ready(function () {
         else if (key == "40" && currentDirection != "up") currentDirection = "down";
     });
 
+    $('#canvas').swipe({
+        //Generic swipe handler for all directions
+        swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+        $(this).text("You swiped " + direction );
+        },
+        //Default is 75px, set to 0 for demo so any distance triggers swipe
+       threshold:0
+
+
+    });
+
     function gameOver() {
         clearInterval(gameLoopInterval);
         canvasContext.fillText("Game Over", 150, 200);
