@@ -85,21 +85,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="snake.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="snake.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/snake/templates/snake.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.375" vertical-offset="0" max-vertical-offset="435">
+            <state vertical-scroll-proportion="0.38423645" vertical-offset="111" max-vertical-offset="720">
               <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="snake.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="snake.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/snake/static/js/snake.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.76303315" vertical-offset="3072" max-vertical-offset="4230">
-              <caret line="237" column="26" selection-start-line="237" selection-start-column="26" selection-end-line="237" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="3447" max-vertical-offset="4140">
+              <caret line="268" column="0" selection-start-line="268" selection-start-column="0" selection-end-line="268" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -154,8 +154,8 @@
         <option value="$PROJECT_DIR$/games/wsgi.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/games/settings.py" />
-        <option value="$PROJECT_DIR$/snake/templates/snake.html" />
         <option value="$PROJECT_DIR$/snake/static/js/snake.js" />
+        <option value="$PROJECT_DIR$/snake/templates/snake.html" />
       </list>
     </option>
   </component>
@@ -766,18 +766,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/snake/templates/snake.html">
+    <entry file="file://$PROJECT_DIR$/snake/static/js/snake.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.375" vertical-offset="0" max-vertical-offset="435">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="3447" max-vertical-offset="4140">
+          <caret line="268" column="0" selection-start-line="268" selection-start-column="0" selection-end-line="268" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/snake/static/js/snake.js">
+    <entry file="file://$PROJECT_DIR$/snake/templates/snake.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.76303315" vertical-offset="3072" max-vertical-offset="4230">
-          <caret line="237" column="26" selection-start-line="237" selection-start-column="26" selection-end-line="237" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.38423645" vertical-offset="111" max-vertical-offset="720">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
       </provider>
