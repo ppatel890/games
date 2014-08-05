@@ -98,8 +98,8 @@
       <file leaf-file-name="snake.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/snake/static/js/snake.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7156398" vertical-offset="3072" max-vertical-offset="4230">
-              <caret line="235" column="24" selection-start-line="235" selection-start-column="24" selection-end-line="235" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.76303315" vertical-offset="3072" max-vertical-offset="4230">
+              <caret line="237" column="26" selection-start-line="237" selection-start-column="26" selection-end-line="237" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -776,8 +776,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/snake/static/js/snake.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7156398" vertical-offset="3072" max-vertical-offset="4230">
-          <caret line="235" column="24" selection-start-line="235" selection-start-column="24" selection-end-line="235" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.76303315" vertical-offset="3072" max-vertical-offset="4230">
+          <caret line="237" column="26" selection-start-line="237" selection-start-column="26" selection-end-line="237" selection-end-column="26" />
           <folding />
         </state>
       </provider>
