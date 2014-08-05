@@ -20,7 +20,8 @@ urlpatterns = patterns('',
     url(r'^save_score', 'snake.views.save_score', name='save_score'),
     url(r'^get_score', 'snake.views.get_score', name='get_score'),
     url(r'^leaderboard', 'snake.views.leaderboard', name='leaderboard'),
-    # url(r'^get_leaders', 'snake.views.get_leaders', name='get_leaders')
+
+    url(r'^memory', 'snake.views.memory', name='memory'),
 
 
 )

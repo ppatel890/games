@@ -77,14 +77,10 @@ def leaderboard(request):
         scores = Score.objects.order_by('-score')
         data = {'scores': scores}
 
-    return render(request, 'leaderboard.html', data)
+        return render(request, 'leaderboard.html', data)
 
 
-# @csrf_exempt
-# def get_leaders(request):
-#     scores = Score.objects.order_by('-score')
-#     data = {'scores': scores}
-#
-#     return render(request, 'leaderboard.html')
+def memory(request):
+    return render(request, 'memory.html')
 
 
